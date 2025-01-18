@@ -17,6 +17,18 @@
         
         <h3>Saved Passwords:</h3>
         <ul id="passwordList"></ul>
+
+        <input type="text" id="generatedPassword" placeholder="Generated Password" readonly>
+        <button onclick="generatePassword()">Generate Password</button>
+
+        <label>Password Length:</label>
+        <input type="number" id="passwordLength" value="12" min="6" max="32">
+
+        <label><input type="checkbox" id="includeNumbers" checked> Include Numbers</label>
+        <label><input type="checkbox" id="includeSymbols" checked> Include Symbols</label>
+
+        <button onclick="generateCustomPassword()">Generate Custom Password</button>
+        <input type="text" id="generatedPassword" readonly>
     </div>
 
     <script src="app.js"></script>
